@@ -1,0 +1,44 @@
+from microbit import *
+
+x = 0 
+while True:
+    display.show(str(x)) 
+    if (button_a.get_presses()) > 0:
+        x = x + 1
+        
+    if (button_b.get_presses()) > 0:
+       while True: 
+            if (button_a.get_presses()) > 0:
+                x = x - 1
+                break
+            if (button_b.get_presses()) > 0:
+                display.show(Image.CLOCK1)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK2)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK3)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK4)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK5)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK6)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK7)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK8)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK9)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK10)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK11)
+                sleep((x/12)*1000)
+                display.show(Image.CLOCK12)
+                sleep((x/12)*1000)
+                display.show(Image.HAPPY)
+                sleep(3000)
+                break
+       
+     
+        
